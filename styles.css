@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --black: #2c2c2c;
+  --beige: #f5f5f5;
+  --swiper-theme-color: rgb(252, 131, 70);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+main {
+  background: rgb(252, 131, 70);
+  background: linear-gradient(
+    90deg,
+    rgba(252, 131, 70, 1) 0%,
+    rgba(255, 216, 156, 1) 100%
+  );
+  color: var(--white);
+  height: 600px;
+}
+
+main img {
+  opacity: 0.25;
+  filter: invert(100%);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+main > .container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+main > .container > div:first-child {
+  margin-top: 80px;
+  width: 40%;
+  z-index: 1;
+}
+
+main > .container > div > h1 {
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 80px;
+}
+
+main > .container > div > h5 {
+  text-decoration: underline;
+  cursor: pointer;
+  width: 80%;
+}
+
+main > .container > div:nth-child(2) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  z-index: 1;
+}
+
+main > .container > div:nth-child(2) > h2 {
+  margin-bottom: 25px;
+}
+
+section {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.swiper {
+  width: 600px;
+  height: auto;
+}
+
+.swiper-slide {
+  padding: 50px 0;
+}
+
+.swiper-slide > div.card {
+  margin: 0 auto;
+  width: 75%;
+  text-align: left;
+}
+
+section h2 {
+  font-weight: bold;
+  background: rgb(252, 131, 70);
+  background: linear-gradient(
+    90deg,
+    rgba(252, 131, 70, 1) 0%,
+    rgba(252, 219, 70, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer {
+  background: var(--black);
+  color: var(--white);
+  text-align: center;
+  padding: 35px 0 20px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+footer .container {
+  width: 30%;
+}
+
+footer img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1270px) {
+  main img {
+    width: 90%;
+    left: 5%;
+  }
+  main > .container > div:first-child {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+
+  main > .container > div:nth-child(2) {
+    width: 97%;
+  }
+
+  main > .container > div > h5 {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  main {
+    height: 450px;
+    padding: 30px 0 0;
+  }
+
+  main > .container > div > h1 {
+    font-size: 42px;
+    line-height: 60px;
+  }
+
+  main > .container > div > h5 {
+    display: none;
+  }
+
+  .swiper {
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  main {
+    height: 350px;
+  }
+
+  main > .container > div > h1 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  main > .container > div > h2 {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  main {
+    height: 470px;
+  }
+}

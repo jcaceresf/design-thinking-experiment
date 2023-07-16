@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tus clases de inglés personalizadas ONLINE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <header class="text-bg-light">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Yo Aprendo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Conócenos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Login
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Soy profesor</a></li>
+                  <li><a class="dropdown-item" href="#">Soy estudiante</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Busca tu curso" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div>
+        <h1>¿Y si comienzas a aprender inglés ahora?</h1>
+        <h5>Haz clic aquí para saber más de nuestros programas</h5>
+      </div>
+      <div>
+        <h2>Conoce tu nivel de inglés GRATIS</h2>
+        <button type="button" class="btn btn-light btn-lg">Quiero hacer el test</button>
+      </div>
+      <img src="./img/banner-background.png" alt="skyline sillouette">
+    </div>
+  </main>
+  <section>
+    <div class="container">
+      <h2>¿Por qué aprender con nosotros?</h2>
+    </div>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="./img/portrait-1.webp" class="card-img-top" alt="Mujer sonriendo">
+            <div class="card-body">
+              <h5 class="card-title">Alta calidad educativa</h5>
+              <p class="card-text">Te ofrecemos un <b>amplio catálogo de profesionales</b> para
+                brindarte la mejor experiencia.</p>
+              <a href="#" class="btn btn-primary">Ver docentes</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="./img/portrait-2.webp" class="card-img-top" alt="Mujer sonriendo">
+            <div class="card-body">
+              <h5 class="card-title">Flexibilidad y cobro por horas</h5>
+              <p class="card-text">Agenda tus clases en vivo con tus profesores favoritos y sólo pagas una tarifa <b>por
+                  hora de clase.</b></p>
+              <a href="#" class="btn btn-primary">Ver tarifas</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <p>Proyecto para la clase: Design Thinking</p>
+      <p>Realizado por grupo 1.</p>
+      <img src="./img/los-andes-logo.png" alt="Universidad de Los Andes">
+      <p>Bogotá, Colombia (2023).</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
